@@ -1,13 +1,48 @@
+# 侧边栏配置
 [sidebar]
-  avatar = "/images/avatar.jpg"          # 头像路径（放在 static/images 下）
-  title = "Meng"                         # 站点标题/你的名字
-  subtitle = "记录生活与技术的点滴"       # 侧边栏个性签名
+  # 左侧栏
+  [sidebar.left]
+    enabled = true
+    sticky = true
+    avatar = "/images/avatar.jpg"          # 头像路径（放在 static/images 下）
+    title = "Meng"                         # 站点标题/你的名字
+    subtitle = "记录生活与技术的点滴"       # 侧边栏个性签名
 
+  # 右侧栏（如果不需要可以 enabled = false）
+  [sidebar.right]
+    enabled = true
+    sticky = true
+
+# 页脚配置
 [footer]
   since = 2025
   customText = "Powered by Hugo & Cloudflare Pages"
 
+# 社交链接
 [social]
   github = "https://github.com/你的GitHub用户名"
   twitter = "https://twitter.com/你的账号"
   rss = true
+
+# 主题其他常用参数（可按需修改）
+[article]
+  math = false
+  toc = true
+  readingTime = true
+
+[comments]
+  enabled = false
+
+[widgets]
+  # 首页右侧栏小部件示例
+  [[widgets.home]]
+    type = "search"
+    enabled = true
+
+  [[widgets.home]]
+    type = "categories"
+    enabled = true
+
+  [[widgets.home]]
+    type = "tag-cloud"
+    enabled = true
