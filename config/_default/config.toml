@@ -1,0 +1,22 @@
+# 部署前请更改 baseurl
+baseurl = "https://inkcoo.com"
+languageCode = "zh-cn"  # 语言代码
+title = "萤可"           # 网站标题
+
+# 主题国际化支持
+# 可选值: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
+defaultContentLanguage = "zh-cn"  # 默认内容语言
+
+# 如果 DefaultContentLanguage 是 [zh-cn ja ko] 之一，请将 hasCJKLanguage 设置为 true
+# 这将使 .Summary 和 .WordCount 对于中日韩语言正确工作。
+hasCJKLanguage = true
+
+# 使用前请更改为您的 Disqus 短名称
+disqusShortname = ""
+
+# Disqus 功能开关，请同时在config/_default/params.toml相应调整
+enableDisqus = false
+
+[pagination]
+pagerSize = 5  # 分页大小
+timeZone = "Asia/Shanghai"

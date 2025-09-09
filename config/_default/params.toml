@@ -1,0 +1,154 @@
+# 放置在这些部分下的页面将显示在主页和归档页面上。
+mainSections = ["post"]  # 主要部分
+# 在 RSS 中输出页面的完整内容。
+rssFullContent = true  # RSS 完整内容
+favicon = "/favicon.png"  # 网站图标
+
+[footer]
+since = 2025  # 网站创建年份
+customText = "© 2025 萤可. All rights reserved.\n使用 Hugo 构建 | 主题 <a href=\"https://stack.jimmycai.com\" target=\"_blank\">Stack 由 Jimmy 设计</a>｜<a href=\"https://inkcoo.com\" target=\"_blank\">Inkcoo</a>汉化<br>部署于Cloudflare"
+
+[dateFormat]
+published = "2006年01月02日"  # 发布日期格式
+lastUpdated = "2006年01月02日 15:04 CST"  # 最后更新日期格式
+
+[sidebar]
+emoji = "🍥"  # 侧边栏表情符号
+subtitle = "侧边栏个性签名， 仅为示例文本，实际使用时请替换为站点副标题。"  # 侧边栏副标题
+
+[sidebar.avatar]
+enabled = true  # 是否启用头像
+local = true   # 头像是否为本地文件
+src = "img/avatar.png"  # 头像路径
+
+[article]
+headingAnchor = false  # 是否启用标题锚点
+math = false          # 是否启用数学公式
+readingTime = true    # 是否显示阅读时间
+
+[article.license]
+enabled = true  # 是否启用许可证
+default = "Licensed under CC BY-NC-SA 4.0"  # 默认许可证
+
+## 小部件
+[[widgets.homepage]]
+type = "search"  # 搜索小部件
+
+[[widgets.homepage]]
+type = "archives"  # 归档小部件
+
+[widgets.homepage.params]
+limit = 5  # 归档限制
+
+[[widgets.homepage]]
+type = "categories"  # 分类小部件
+
+[widgets.homepage.params]
+limit = 10  # 分类限制
+
+[[widgets.homepage]]
+type = "tag-cloud"  # 标签云小部件
+
+[widgets.homepage.params]
+limit = 10  # 标签云限制
+
+[[widgets.page]]
+type = "toc"  # 目录小部件
+
+[opengraph.twitter]
+site = ""  # Twitter 站点
+# 注意：Twitter链接已更改为邮箱链接，此处保持空值
+card = "summary_large_image"  # Twitter 卡片类型
+
+[defaultImage.opengraph]
+enabled = false  # 是否启用默认 OpenGraph 图像
+local = false   # 默认图像是否为本地文件
+src = ""       # 默认图像路径
+
+[colorScheme]
+toggle = true   # 是否启用颜色方案切换
+default = "auto"  # 默认颜色方案
+
+[imageProcessing.cover]
+enabled = true  # 是否启用封面图像处理
+
+[imageProcessing.content]
+enabled = true  # 是否启用内容图像处理
+
+## 评论
+[comments]
+enabled = false   # 是否启用评论
+provider = "disqus"  # 评论提供商
+
+# Disqus 设置
+disqusEnabled = false  # 是否启用 Disqus 评论功能，请同时在config/_default/config.toml相应调整
+
+[comments.disqusjs]
+shortname = ""  # Disqus 短名称
+apiUrl = ""     # Disqus API URL
+apiKey = ""     # Disqus API 密钥
+admin = ""      # Disqus 管理员
+adminLabel = ""  # Disqus 管理员标签
+
+[comments.utterances]
+repo = ""        # Utterances 仓库
+issueTerm = "pathname"  # Utterances 问题术语
+label = ""       # Utterances 标签
+
+[comments.remark42]
+host = ""   # Remark42 主机
+site = ""   # Remark42 站点
+locale = ""  # Remark42 本地化
+
+[comments.vssue]
+platform = ""      # Vssue 平台
+owner = ""         # Vssue 所有者
+repo = ""          # Vssue 仓库
+clientId = ""      # Vssue 客户端 ID
+clientSecret = ""  # Vssue 客户端密钥
+autoCreateIssue = false  # 是否自动创建问题
+
+[comments.waline]
+serverURL = ""  # Waline 服务器 URL
+lang = ""       # Waline 语言
+visitor = ""    # Waline 访问者
+avatar = ""     # Waline 头像
+emoji = ["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"]  # Waline 表情符号
+requiredMeta = ["name", "email", "url"]  # Waline 必需元数据
+placeholder = ""  # Waline 占位符
+
+[comments.waline.locale]
+admin = "Admin"  # Waline 管理员
+
+[comments.twikoo]
+envId = ""    # Twikoo 环境 ID
+region = ""   # Twikoo 区域
+path = ""     # Twikoo 路径
+lang = ""     # Twikoo 语言
+
+[comments.cactus]
+defaultHomeserverUrl = "https://matrix.cactus.chat:8448"  # Cactus 默认家庭服务器 URL
+serverName = "cactus.chat"  # Cactus 服务器名称
+siteName = ""  # Cactus 站点名称
+
+[comments.giscus]
+repo = ""        # Giscus 仓库
+repoID = ""      # Giscus 仓库 ID
+category = ""    # Giscus 分类
+categoryID = ""  # Giscus 分类 ID
+mapping = ""     # Giscus 映射
+lightTheme = ""  # Giscus 浅色主题
+darkTheme = ""   # Giscus 深色主题
+reactionsEnabled = 1  # Giscus 反应启用
+emitMetadata = 0  # Giscus 发出元数据
+
+[comments.gitalk]
+owner = ""        # Gitalk 所有者
+admin = ""        # Gitalk 管理员
+repo = ""         # Gitalk 仓库
+clientID = ""     # Gitalk 客户端 ID
+clientSecret = ""  # Gitalk 客户端密钥
+
+[comments.cusdis]
+host = ""  # Cusdis 主机
+id = ""    # Cusdis ID
